@@ -22,6 +22,7 @@ export default {
         primary: "#ECEEFF",
         "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
+        "hover-slate-gray": "#4e4d4d",
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)",
       },
