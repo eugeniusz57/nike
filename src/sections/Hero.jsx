@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
+import CountUp from "react-countup";
 
 import { shoes, statistics } from "../constants";
 import { Button, ShoeCard } from "../components";
@@ -37,7 +38,9 @@ const Hero = () => {
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat, index) => (
             <div key={index}>
-              <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
+              <p className="text-4xl font-palanquin font-bold">
+                <CountUp start={0} end={stat.value} duration={3} delay={1} />
+              </p>
               <p className="leading-7 font-montserrat text-slate-gray">
                 {stat.label}
               </p>
